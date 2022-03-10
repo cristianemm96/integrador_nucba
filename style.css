@@ -1,0 +1,918 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&display=swap');
+
+:root{
+  --main-background-col:#360d72;
+  --arcadeFont: 'Press Start 2P', cursive;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: var(--arcadeFont);
+    padding-top: 80px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Cg fill='%23c6b3e5' fill-opacity='0.15'%3E%3Cpath fill-rule='evenodd' d='M0 0h4v4H0V0zm4 4h4v4H4V4z'/%3E%3C/g%3E%3C/svg%3E");
+    background-color: var(--main-background-col);
+  }
+  button{
+    background-color: #ce10b4;
+    color: white;
+    font-family: var(--arcadeFont);
+    font-size: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  button:hover{
+    color: var(--main-background-col);
+  }
+  main{
+    color: white;
+  }
+  main h2{
+    text-align: center;
+  }
+  .sub-title{
+    padding-top: 30px;
+  }
+  .product-price{
+    font-family: 'BhuTuka Expanded One', cursive;
+    font-size: 15px;
+  }
+  /*Header*/
+  .header {
+    background-color: hsla(254, 61%, 21%, 0.99);
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  main a:hover{
+    color:#ce10b4;
+  }
+  .product-img{
+    margin-bottom: 15px;
+  }
+
+  footer h4{
+    color: white;
+    text-align: center;
+    font-size: 11px;
+    padding-top: 20px;
+  }
+  /*Nav*/
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px;
+    margin: 0 auto;
+  }
+  
+  .nav-link {
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+  }
+  
+  .logo {
+    background-image: url(/assets/logo.png);
+    height: 66px;
+    margin-top: 7px;
+    padding: 0 40px;
+  }
+
+ 
+  .nav-menu {
+    display: flex;
+    margin-right: 60px;
+    list-style: none;
+  }
+  
+  .nav-menu-item {
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+  }
+  
+  .nav-menu-link {
+    padding: 8px 12px;
+    border-radius: 3px;
+  }
+  
+  .nav-menu-link:hover,
+  .nav-menu-link_active {
+    background-color: #480983;
+    transition: 0.5s;
+  }
+  /* TOGGLE */
+  .nav-toggle {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+  
+    display: none;
+  }
+  /*End nav*/
+  /*Desktop > 1150px*/
+  @media only screen and (min-width:1150px) {
+  /*Banner*/
+    .banner-container {
+      background: url(/assets/banner.png);
+      background-position: 45%;
+      background-repeat: no-repeat;
+      background-position-y: 40;
+      width: 100%;
+      background-color: black;
+      height: 320px;
+    }
+  /*Banner*/
+  /*Main*/
+    main{
+      width: 80%;
+      background-color: var(--main-background-col);
+      margin: auto;
+      padding-bottom:30px;
+    }
+    /*Feedback*/
+    .feedback{
+      display: flex;
+      padding-top: 20px;
+      margin: auto;
+      flex-direction: column;
+      width: 85%;
+      align-items: center;
+      color: white;
+    }
+    .article{
+      width: 90%;
+      display: flex;
+      padding: 15px;
+      font-size: 11px;
+      height: 210px;
+      margin: 10px 0 10px 0;
+      border-radius: 10px;
+      background-color: #480983;
+    }
+    .article .text{
+      width: 70%;
+      padding-left:25px;
+      margin: auto;
+    }
+    /*End feedback*/
+    /*Store*/
+    .store{
+      display: flex;
+      padding-top: 20px;
+      margin: auto;
+      flex-direction: column;
+      width: 76%;
+      align-items: center;
+      color: white;
+    }
+    .store-container{
+      height: 250px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      row-gap: 15px;
+    }
+    .product{
+      width: 230px;
+      background-color: #480983;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      border-radius: 10px;
+      align-items: center;
+      font-size: 10px;
+    }
+    .product a{
+      color: white;
+      text-decoration: none;
+    }
+    .product-img{
+      margin-top: 10px;
+    }
+
+    .store-link{
+      margin: 40px 0 40px 0;
+    }
+    .store-link a{
+      color: white;
+      text-decoration: none;
+    }
+    .store_title{
+      color: white;
+      text-align: center;
+      margin-top: 20px;
+    }
+    /*End store*/
+    /*Login form*/
+    .login-form{
+      height: 430px;
+      width: 60%;
+      margin: 40px auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 15px;
+      background-color: #480983;
+      color: white;
+    }
+    .email{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 0px 20px 0px;
+      margin-top: 15px;
+    }
+    
+    .email input{
+      height: 40px;
+      width:300px;
+      margin-top: 25px;
+    }
+    .password{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 0px 20px 0px;
+      margin-top: 10px;
+    }
+    .password input{
+      height: 40px;
+      width:300px;
+      margin-top: 25px;
+    }
+    .enter{
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
+    .enter button{
+      height: 50px;
+      width: 140px;
+    }
+    /*End Login Form*/
+    /*Contact form*/
+    .contact-container{
+      width: 60%;
+      margin: 40px auto 0px auto;
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 10px;
+      align-items: center;
+      border-radius: 15px;
+      background-color: #480983;
+      color: white;
+    }
+    .tel{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 5px 0px 20px 0px;
+      margin-top: 15px;
+    }
+    .tel input{
+      height: 40px;
+      width:300px;
+      margin-top: 25px;
+    }
+    .option-container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 5px 0px 20px 0px;
+    }
+    .option-container select{
+      height: 40px;
+      width:300px;
+      margin-top: 25px;
+    }
+    .comment-container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .comment-container textarea{
+      width: 300px;
+      margin-top: 25px;
+    }
+    .submit-msg{
+      display: flex;
+      justify-content: center;
+      padding-bottom: 25px;
+    }
+    .submit-msg button{
+      height: 50px;
+      width: 110px;
+      margin-top: 20px;
+    }
+    /*End contact form*/
+    /*Sign-up form*/
+    .sign-form{
+      width: 60%;
+      margin: 40px auto 0px auto;
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 10px;
+      align-items: center;
+      border-radius: 15px;
+      background-color: #480983;
+      color: white;
+    }
+    .password-sign-up{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 0px 20px 0px; 
+    }
+    .password-sign-up label{
+      height: 12px;
+      width: 300px;
+      text-align: center;
+    }
+    .password-sign-up input{
+      width: 300px;
+      height: 35px;
+      margin-top: 30px;
+    }
+    .register{
+      display: flex;
+      justify-content: center;
+      padding-bottom: 25px;
+    }
+    .register button{
+      height: 50px;
+      width: 140px;
+      margin-top: 20px;
+    }
+    .opt_login{
+      display: flex;
+      justify-content: space-around;
+      width: 60%;
+      margin: auto;
+    }
+    .opt_login a{
+      color: white;
+      text-decoration: none;
+    }
+    /*End sign-up form*/
+  /*Main*/
+    footer{
+      background-color: hsla(254, 61%, 21%, 0.99);
+      height: 80px;
+    }
+  }
+  
+  /*End Destkop*/
+  /*1150px < Desktop > 769px*/
+  @media only screen and (min-width:769px) and (max-width:1150px){
+    .store{
+      margin-top: 20px;
+      background-color: #480983;
+      width: 100%;
+      padding-top: 15px;
+      padding-bottom: 10px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+    .store-container{
+      width: 100%;
+    }
+    .article .text p{
+      font-size: 9px;
+    }
+
+    .banner-container {
+      background: url(/assets/banner.png);
+      background-position: 45%;
+      background-repeat: no-repeat;
+      background-position-y: 40;
+      width: 100%;
+      background-color: black;
+      height: 320px;
+    }
+  /*Banner*/
+  /*Main*/
+    main{
+      width: 80%;
+      background-color: var(--main-background-col);
+      margin: auto;
+      padding-bottom:30px;
+    }
+    .feedback{
+      display: flex;
+      padding-top: 20px;
+      margin: auto;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      color: white;
+    }
+    .article{
+      width: 90%;
+      display: flex;
+      padding: 15px;
+      font-size: 13px;
+      height: 210px;
+      margin: 10px 0 10px 0;
+      border-radius: 10px;
+      background-color: #480983;
+    }
+    .article .text{
+      width: 70%;
+      padding-left:25px;
+      margin: auto;
+
+    }
+    /*Store*/
+    .store-container{
+      height: 250px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      row-gap: 15px;
+    }
+    .product{
+      width: 230px;
+      background-color: #480983;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      border-radius: 10px;
+      align-items: center;
+      font-size: 10px;
+    }
+    .product a{
+      color: white;
+      text-decoration: none;
+    }
+    .product-img{
+      margin-top: 10px;
+    }
+
+    .store-link{
+      margin: 40px 0 40px 0;
+    }
+    .store-link a{
+      color: white;
+      text-decoration: none;
+    }
+    .store_title{
+      color: white;
+      text-align: center;
+      margin-top: 20px;
+    }
+    /*End store*/
+    /*Login form*/
+    .login-form{
+      height: 430px;
+      width: 60%;
+      margin: 40px auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 15px;
+      background-color: #480983;
+      color: white;
+    }
+    .email{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 0px 20px 0px;
+      margin-top: 15px;
+    }
+    
+    .email input{
+      height: 40px;
+      width:300px;
+      margin-top: 25px;
+    }
+    .password{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 0px 20px 0px;
+      margin-top: 10px;
+    }
+    .password input{
+      height: 40px;
+      width:300px;
+      margin-top: 25px;
+    }
+    .enter{
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
+    .enter button{
+      height: 50px;
+      width: 140px;
+    }
+    /*End Login Form*/
+    /*Contact form*/
+    .contact-container{
+      width: 60%;
+      margin: 40px auto 0px auto;
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 10px;
+      align-items: center;
+      border-radius: 15px;
+      background-color: #480983;
+      color: white;
+    }
+    .tel{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 5px 0px 20px 0px;
+      margin-top: 15px;
+    }
+    .tel input{
+      height: 40px;
+      width:300px;
+      margin-top: 25px;
+    }
+    .option-container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 5px 0px 20px 0px;
+    }
+    .option-container select{
+      height: 40px;
+      width:300px;
+      margin-top: 25px;
+    }
+    .comment-container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .comment-container textarea{
+      width: 300px;
+      margin-top: 25px;
+    }
+    .submit-msg{
+      display: flex;
+      justify-content: center;
+      padding-bottom: 25px;
+    }
+    .submit-msg button{
+      height: 50px;
+      width: 110px;
+      margin-top: 20px;
+    }
+    /*End contact form*/
+    /*Sign-up form*/
+    .sign-form{
+      width: 60%;
+      margin: 40px auto 0px auto;
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 10px;
+      align-items: center;
+      border-radius: 15px;
+      background-color: #480983;
+      color: white;
+    }
+    .password-sign-up{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 0px 20px 0px; 
+    }
+    .password-sign-up label{
+      height: 12px;
+      width: 300px;
+      text-align: center;
+    }
+    .password-sign-up input{
+      width: 300px;
+      height: 35px;
+      margin-top: 30px;
+    }
+    .register{
+      display: flex;
+      justify-content: center;
+      padding-bottom: 25px;
+    }
+    .register button{
+      height: 50px;
+      width: 140px;
+      margin-top: 20px;
+    }
+    .opt_login{
+      display: flex;
+      justify-content: space-around;
+      width: 65%;
+      margin: auto;
+    }
+    .opt_login a{
+      color: white;
+      font-size: 10px;
+      text-decoration: none;
+    }
+    /*End sign-up form*/
+  /*Main*/
+    footer{
+      background-color: hsla(254, 61%, 21%, 0.99);
+      height: 80px;
+    }
+
+  }
+  
+  /*1150px < Desktop > 769px*/
+  /* MOBILE */
+  @media (max-width: 768px) {
+    body {
+      padding-top: 60px;
+    }
+  
+    .header {
+      height: 60px;
+    }
+    .banner-container{
+      display: none;
+    }
+    .logo {
+      font-size: 25px;
+      padding: 0 20px;
+      line-height: 60px;
+      display: none;
+    }
+    .text{
+      width: 100%;
+    }
+    .text p{
+      padding: 30px;
+    }
+    /*Nav*/
+    .nav-menu {
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      background-color:#360d72;
+      position: fixed;
+      top: 60px;
+      width: 100%;
+      padding: 20px 0;
+      height: calc(100% - 60px);
+      overflow-y: auto;
+      left: 100%;
+      transition: left 0.3s;
+    }
+  
+    .nav-menu-item {
+      line-height: 70px;
+    }
+  
+    .nav-toggle {
+      display: block;
+    }
+  
+    .nav-menu_visible {
+      left: 0;
+    }
+  
+    .nav-toggle:focus:not(:focus-visible) {
+      outline: none;
+    }
+    /*End nav*/
+    main{
+      width: 100%;
+      font-size: 10px;
+      background-color:#360d72;
+      color: white;
+      margin-top: 0;
+    }
+    /*Feedback*/
+    .feedback{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 15px;
+      width: 100%;
+    }
+    .article{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 10px;
+      margin-top: 5px;
+      background-color: #480983;
+    }
+    /*End Feedback*/
+    /*Store*/
+    .store{
+      margin-top: 20px;
+      background-color: #480983;
+      width: 100%;
+      padding-top: 15px;
+      padding-bottom: 10px;
+    }
+    .store-container{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .store_title {
+      margin-top: 10px;
+    }
+    .product{
+      padding: 10px 0 10px 0;
+      width: 95%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 10px;
+      background-color: #3b259b;
+      border-radius: 10px;
+    }
+
+    .product-name{
+      margin-bottom: 15px;
+    }
+    .product-price{
+      margin-bottom: 15px;
+    }
+    .product-buy a{
+      color: white;
+      font-family: var(--arcadeFont);
+      text-decoration: none;
+    }
+
+    .store-link{
+      text-align: center;
+    }
+    .store-link a{
+      color: white;
+      text-decoration: none;
+    }
+    /*End store*/
+    /*Login form*/
+    .login-form{
+      width: 100%;
+      height: 250px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .email{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 0px 20px 0px;
+    }
+    .message{
+      margin-bottom: 5px;
+    }
+    
+    .email input{
+      height: 35px;
+      width:250px;
+      margin-top: 15px;
+    }
+    .tel{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 0px 20px 0px; 
+    }
+    .tel input{
+      width:250px;
+      height: 35px;
+      margin-top: 15px;
+    }
+    .password{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0px 0px 20px 0px;
+    }
+    .password input{
+      width: 250px;
+      height: 35px;
+      margin-top: 15px;
+    }
+    .enter{
+      display: flex;
+      justify-content: center;
+      height: 40px;
+    }
+    .enter button{
+      width: 110px;
+      margin-top: 10px;
+      height: 35px;
+    }
+    .sub-title{
+      text-align: center;
+      padding-top: 15px;
+    }
+    .opt_login{
+      width: 100%;
+      height: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 10px;
+    }
+    .opt_login a{
+      color: white;
+      text-decoration: none;
+    }
+
+    .contact-container{
+      padding: 15px 0px 0px 5px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .comment-container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      margin-top: 20px;
+    }
+    .submit-msg{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+    .submit-msg button{
+      width: 100px;
+      height: 35px;
+    }
+    .contact-title{
+      padding: 15px 0 15px 0;
+      text-align: center;
+    }
+    .sign-form{
+      width: 100%;
+      height: 330px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .password-sign-up{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0px 0px 20px 0px; 
+    }
+    .password-sign-up label{
+      height: 12px;
+      width: 250px;
+      text-align: center;
+    }
+    .password-sign-up input{
+      width: 250px;
+      height: 35px;
+      margin-top: 15px;
+    }
+  
+    .register{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .register button{
+      width: 130px;
+      height: 40px;
+    }
+    .option-container{
+      display: flex;
+      justify-content: center;
+    }
+    footer{
+      height: 60px;
+      width: 100%;
+      background-color:hsla(254, 61%, 21%, 0.99);
+    }
+  }
+
+  
+  /* MOBILE */
+
